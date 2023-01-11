@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://kit.fontawesome.com/5384685fcb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="sr-container">
+    <div id="main-header">
+      <div id="top-heading">
+        <h1>Task <span id="update-size">List</span> </h1>
+      </div>
+      <div class="add-item">
+        <span><i id="give-color" class="fa fa-plus-circle" onclick="setTime()"></i></span>
+        <span id="add-list">Add Item</span>
+      </div>
+    </div>
+    <div class="add-some-msg" id="add-some-msg">
+      <p>No Item in the todo list</p>
+    </div>
+  </div>
+  <div id="sr1-container">
+    <div class="add-new-text">
+      <h1>Add New List</h1>
+    </div>
+    <div> <input type="text" name="ListName" id="list" placeholder="Add New List" /> </div>
+    <br />
+    <div class="btn-sm">
+      <p id="addbtn" onclick="addObj1()">ADD</p>
+      <p id="closebtn" onclick="addObj2()">Close</p>
+    </div>
+  </div>
+  <div id="main-flex-container"></div>
+  <div id="sr2-container">
+    <div class="add-new-text">
+      <h1>Add New Item</h1>
+    </div>
+    <div>
+      <input type="text" name="ListName" id="nextlist" placeholder="Add New Item" />
+    </div>
+    <br />
+    <div class="btn-sm">
+      <p id="miniaddbtn">ADD</p>
+      <p id="worst" onclick="wrostAgain()">Close</p>
+    </div>
+
+  </div>
+
+
+  </div>
+
+
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
